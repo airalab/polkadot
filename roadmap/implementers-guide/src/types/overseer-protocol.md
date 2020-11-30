@@ -238,7 +238,7 @@ enum ChainApiMessage {
 	}
 	/// Blacklist a set of block hashes to be considered poisened.
 	/// Assumes all hashes exist only once in the set.
-	Blacklist{
+	Blacklist {
 		set: Vec<Hash>,
 		response: ResponseChannel<Result<()>>,
 	},
